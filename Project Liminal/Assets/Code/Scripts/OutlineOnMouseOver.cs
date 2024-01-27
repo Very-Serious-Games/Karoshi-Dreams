@@ -10,7 +10,8 @@ public class OutlineOnMouseOver : MonoBehaviour
     private void Update()
     {
         // Get the ray from the camera to the mouse position
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Vector2 middleScreen = new Vector2(Screen.width / 2, Screen.height / 2);
+        Ray ray = Camera.main.ScreenPointToRay(middleScreen);
         RaycastHit hit;
 
         // Perform the raycast
