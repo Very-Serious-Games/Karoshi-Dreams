@@ -1,18 +1,11 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class OutlineOnMouseOver : MonoBehaviour
 {
-    public Material normalMaterial;
     public Material outlineMaterial;
-    private Renderer renderer;
+    private Dictionary<GameObject, Material[]> originalMaterials = new Dictionary<GameObject, Material[]>();
     private GameObject lastHitObject;
-
-    private void Start()
-    {
-        renderer = GetComponent<Renderer>();
-    }
 
     private void Update()
     {
@@ -26,24 +19,38 @@ public class OutlineOnMouseOver : MonoBehaviour
             // Check if the hit GameObject has the "Lockable" tag
             if (hit.transform.gameObject.CompareTag("Lockable"))
             {
-                // If a different GameObject was hit, change the material of the previously hit GameObject back to the normal material
+                // If a different GameObject was hit, restore the materials of the previously hit GameObject
                 if (lastHitObject != null && lastHitObject != hit.transform.gameObject)
                 {
-                    lastHitObject.GetComponent<Renderer>().material = normalMaterial;
+                    lastHitObject.GetComponent<Renderer>().materials = originalMaterials[lastHitObject];
                 }
 
-                // Change the material of the hit GameObject to the outline material
-                hit.transform.gameObject.GetComponent<Renderer>().material = outlineMaterial;
+                // Store the original materials of the hit GameObject if they haven't been stored yet
+                if (!originalMaterials.ContainsKey(hit.transform.gameObject))
+                {
+                    originalMaterials[hit.transform.gameObject] = hit.transform.gameObject.GetComponent<Renderer>().materials;
+                }
+
+                // Create a new array of materials that includes the original materials and the outline material
+                List<Material> materials = new List<Material>(originalMaterials[hit.transform.gameObject]);
+                materials.Add(outlineMaterial);
+                hit.transform.gameObject.GetComponent<Renderer>().materials = materials.ToArray();
 
                 // Store the hit GameObject for the next frame
                 lastHitObject = hit.transform.gameObject;
             }
             else if (lastHitObject != null)
             {
-                // If the raycast did not hit a GameObject with the "Lockable" tag, change the material of the previously hit GameObject back to the normal material
-                lastHitObject.GetComponent<Renderer>().material = normalMaterial;
+                // If the raycast did not hit a GameObject with the "Lockable" tag, restore the materials of the previously hit GameObject
+                lastHitObject.GetComponent<Renderer>().materials = originalMaterials[lastHitObject];
                 lastHitObject = null;
             }
+        }
+        else if (lastHitObject != null)
+        {
+            // If the raycast did not hit any GameObject, restore the materials of the previously hit GameObject
+            lastHitObject.GetComponent<Renderer>().materials = originalMaterials[lastHitObject];
+            lastHitObject = null;
         }
     }
 }
