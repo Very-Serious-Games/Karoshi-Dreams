@@ -19,6 +19,9 @@ public class CharacterController : MonoBehaviour
     public float rotationSpeed = 20f; // Adjust this value to change the speed of rotation
     public float releaseDuration = 0.1f; // Duration of the smooth release
 
+    [Header("Audio Settings")]
+    public AudioController audioController;
+
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
     private bool isLockedOnTarget = false; // Whether the camera is locked on the target
@@ -35,9 +38,6 @@ public class CharacterController : MonoBehaviour
         Vector3 rot = playerCamera.transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
-
-        //tempCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        //tempCube.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
     }
 
     void Update()
@@ -63,29 +63,30 @@ public class CharacterController : MonoBehaviour
         Vector2 middleScreen = new Vector2(Screen.width / 2, Screen.height / 2);
         Ray ray= playerCamera.ScreenPointToRay(middleScreen);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-            //tempCube.transform.position = hit.point;
-        }
 
         // Raycast
         if (Input.GetMouseButtonDown(0))
         {
             if (Physics.Raycast(ray, out hit))
             {
-                // If the clicked object is the current target, release it
-                if (hit.transform.gameObject == target)
+                // Check if the clicked object has the correct tag
+                if (hit.transform.gameObject.CompareTag("Lockable"))
                 {
-                    if (releaseCoroutine != null)
+                    // If the clicked object is the current target, release it
+                    if (hit.transform.gameObject == target)
                     {
-                        StopCoroutine(releaseCoroutine);
+                        if (releaseCoroutine != null)
+                        {
+                            StopCoroutine(releaseCoroutine);
+                        }
+                        releaseCoroutine = StartCoroutine(ReleaseTarget());
                     }
-                    releaseCoroutine = StartCoroutine(ReleaseTarget());
-                }
-                else
-                {
-                    target = hit.transform.gameObject;
-                    isLockedOnTarget = true;
+                    else
+                    {
+                        target = hit.transform.gameObject;
+                        isLockedOnTarget = true;
+                        audioController.PlayAudio("test");
+                    }
                 }
             }
         }
