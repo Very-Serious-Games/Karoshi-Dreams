@@ -19,6 +19,9 @@ public class CharacterController : MonoBehaviour
     public float rotationSpeed = 20f; // Adjust this value to change the speed of rotation
     public float releaseDuration = 0.1f; // Duration of the smooth release
 
+    [Header("Audio Settings")]
+    public AudioController audioController;
+
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
     private bool isLockedOnTarget = false; // Whether the camera is locked on the target
@@ -86,6 +89,7 @@ public class CharacterController : MonoBehaviour
                 {
                     target = hit.transform.gameObject;
                     isLockedOnTarget = true;
+                    audioController.PlayAudio("test");
                 }
             }
         }
