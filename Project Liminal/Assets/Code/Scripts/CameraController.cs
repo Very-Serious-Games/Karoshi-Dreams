@@ -8,33 +8,32 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        // If the left mouse button is clicked
         if (Input.GetMouseButtonDown(0))
         {
-            // Create a ray from the camera to the mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-
-            // If the ray hits a GameObject
             if (Physics.Raycast(ray, out hit))
             {
-                // If the hit GameObject is the current target, release the camera
+                // If the clicked object is the current target, release it
                 if (hit.transform.gameObject == target)
                 {
                     target = null;
                 }
-                // Otherwise, set the hit GameObject as the target
                 else
                 {
                     target = hit.transform.gameObject;
                 }
             }
         }
+    }
 
-        // If a target is assigned, make the camera look at the target
+    void LateUpdate()
+    {
         if (target != null)
         {
-            transform.LookAt(target.transform);
+            Vector3 direction = (target.transform.position - transform.position).normalized;
+            Quaternion lookRotation = Quaternion.LookRotation(direction);
+            transform.rotation = lookRotation;
         }
     }
 }
