@@ -35,9 +35,13 @@ public class CharacterController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        Vector3 rot = playerCamera.transform.localRotation.eulerAngles;
-        rotY = rot.y;
-        rotX = rot.x;
+        // Set initial rotation to look to the front
+        rotY = 0.0f;
+        rotX = 0.0f;
+
+        // Apply the rotation to the player camera
+        Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
+        playerCamera.transform.rotation = localRotation;
     }
 
     void Update()
