@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="container" style="flex-grow: 1; background-color: rgba(30, 87, 113, 0.55); flex-shrink: 0;">
+            <ui:Toggle name="Toggle" style="position: absolute; top: 1264px; left: -4px; flex-grow: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
