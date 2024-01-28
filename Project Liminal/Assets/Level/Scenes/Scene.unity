@@ -198,7 +198,6 @@ GameObject:
   m_Component:
   - component: {fileID: 108920318}
   - component: {fileID: 108920315}
-  - component: {fileID: 108920317}
   - component: {fileID: 108920316}
   m_Layer: 0
   m_Name: Screen Camera
@@ -302,14 +301,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!81 &108920317
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108920314}
-  m_Enabled: 1
 --- !u!4 &108920318
 Transform:
   m_ObjectHideFlags: 0
