@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class KeyboardKey : MonoBehaviour
 {
+
+    [Header("Audio Settings")]
+    public AudioController audioController;
+
     public bool isPressed = false;
     public float maxPressedDistance = 0.1f;
     public float lerpSpeed = 5f;
@@ -33,6 +37,8 @@ public class KeyboardKey : MonoBehaviour
             {
                 // Come up and disable isPressed
                 isPressed = false;
+
+                audioController.PlayAudio("key"); // Play the key sound
             }
         }
         else
