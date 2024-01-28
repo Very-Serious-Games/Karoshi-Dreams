@@ -19,7 +19,8 @@ public class InputRelaySource : MonoBehaviour
     void Update()
     {
         // retrieve a ray based on the mouse location
-        Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+          Vector2 middleScreen = new Vector2(Screen.width / 2, Screen.height / 2);
+        Ray mouseRay = Camera.main.ScreenPointToRay(middleScreen);
 
         // raycast to find what we have hit
         RaycastHit hitResult;
