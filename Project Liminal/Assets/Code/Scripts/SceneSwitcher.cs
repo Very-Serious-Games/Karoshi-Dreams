@@ -31,4 +31,13 @@ public class SceneSwitcher : MonoBehaviour
             Debug.Log("Switched to scene: " + sceneName);
         }
     }
+
+    public void CloseGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
 }
