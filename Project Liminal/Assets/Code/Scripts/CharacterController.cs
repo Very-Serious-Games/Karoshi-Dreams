@@ -92,6 +92,10 @@ public class CharacterController : MonoBehaviour
                         audioController.PlayAudio("test");
                     }
                 }
+                else if (hit.transform.gameObject.CompareTag("KeyboardKey"))
+                {
+                    hit.transform.gameObject.GetComponent<KeyboardKey>().isPressed = true;
+                }
             }
         }
     }
