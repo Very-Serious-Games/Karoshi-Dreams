@@ -8841,47 +8841,16 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ef855a068cdd4c5a1baac7ad92143291, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1638925665}
+      addedObject: {fileID: 1638925669}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ef855a068cdd4c5a1baac7ad92143291, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1638925669}
+      addedObject: {fileID: 1638925673}
   m_SourcePrefab: {fileID: 100100000, guid: ef855a068cdd4c5a1baac7ad92143291, type: 3}
 --- !u!1 &1638925664 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef855a068cdd4c5a1baac7ad92143291, type: 3}
   m_PrefabInstance: {fileID: 1638925663}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1638925665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638925664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edd40e661f4130f4083ff47a02a46416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RaycastMask:
-    serializedVersion: 2
-    m_Bits: 1
-  RaycastDistance: 15
-  OnCursorInput:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1388099353}
-        m_TargetAssemblyTypeName: InputRelaySink, Assembly-CSharp
-        m_MethodName: OnCursorInput
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!64 &1638925669
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8904,6 +8873,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1852286786136959829, guid: ef855a068cdd4c5a1baac7ad92143291, type: 3}
+--- !u!114 &1638925673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638925664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd40e661f4130f4083ff47a02a46416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RaycastMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  RaycastDistance: 15
+  OnCursorInput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1388099358}
+        m_TargetAssemblyTypeName: InputRelaySink, Assembly-CSharp
+        m_MethodName: OnCursorInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!850595691 &1653545625
 LightingSettings:
   m_ObjectHideFlags: 0
