@@ -93,7 +93,7 @@ public class CharacterController : MonoBehaviour
                         target = hit.transform.gameObject;
                         isLockedOnTarget = true;
                         audioController.PlayAudio("test");
-                        sceneSwitcher.SwitchScene("TestingScene");
+                        sceneSwitcher.SwitchScene("NightmareScene");
                     }
                 }
                 else if (hit.transform.gameObject.CompareTag("KeyboardKey"))
