@@ -37,8 +37,6 @@ public class KeyboardKey : MonoBehaviour
             {
                 // Come up and disable isPressed
                 isPressed = false;
-
-                audioController.PlayAudio("key"); // Play the key sound
             }
         }
         else

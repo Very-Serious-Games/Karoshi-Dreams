@@ -98,6 +98,7 @@ public class CharacterController : MonoBehaviour
                 }
                 else if (hit.transform.gameObject.CompareTag("KeyboardKey"))
                 {
+                    audioController.PlayAudio("key"); // Play the key sound
                     hit.transform.gameObject.GetComponent<KeyboardKey>().isPressed = true;
                 }
             }
