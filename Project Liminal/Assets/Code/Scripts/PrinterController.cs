@@ -27,8 +27,9 @@ public class PrinterController : MonoBehaviour
 
     public void Print()
     {
-        /*
+        
         GameObject obj = Instantiate(paperPrefab, transform.position, transform.rotation);
+        /*
         TextMeshProUGUI text = obj.folioText;
         text.text = screenText.text;
         screenText.text = "";
