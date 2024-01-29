@@ -29,6 +29,9 @@ public class CharacterController : MonoBehaviour
     [Header("Scene Settings")]
     public SceneSwitcher sceneSwitcher;
 
+    [Header("Minigame Settings")]
+    public MinigameController minigameController;
+
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
     private bool isLockedOnTarget = false; // Whether the camera is locked on the target
@@ -103,10 +106,23 @@ public class CharacterController : MonoBehaviour
                         sceneSwitcher.SwitchScene("NightmareScene");
                     }
                 }
-                else if (hit.transform.gameObject.CompareTag("KeyboardKey"))
+                
+                
+                if (hit.transform.gameObject.CompareTag("KeyboardKey"))
                 {
                     audioController.PlayAudio("key"); // Play the key sound
                     hit.transform.gameObject.GetComponent<KeyboardKey>().isPressed = true;
+                }
+
+                if (hit.transform.gameObject.CompareTag("CupWithoutBall")) 
+                {
+                    // If this cup is clicked, trigger the merge event
+                    minigameController.OnCupClicked(hit.transform.gameObject);
+                }
+
+                if (hit.transform.gameObject.CompareTag("CupWithBall"))
+                {
+                    Debug.Log("You found the ball!");
                 }
             }
         }
