@@ -7,6 +7,10 @@ public class CharacterController : MonoBehaviour
     [Header("Camera Settings")]
     public Camera playerCamera;
 
+    public float zoomSpeed = 10f; // Adjust this value to change the speed of zooming
+    private float initialFov = 60f; // The initial field of view of the camera
+    public float zoomedFov = 30f; // The field of view of the camera when zoomed in
+
     [Header("Target Settings")]
     public GameObject target; // The target object to follow
 
@@ -37,6 +41,9 @@ public class CharacterController : MonoBehaviour
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        // Set initial field of view
+        initialFov = playerCamera.fieldOfView;
 
         // Set initial rotation to look to the front
         rotY = 0.0f;
@@ -103,6 +110,24 @@ public class CharacterController : MonoBehaviour
                 }
             }
         }
+        else if(Input.GetMouseButton(1))
+        {
+            ZoomIn();
+        }
+        else
+        {
+            ZoomOut();
+        }
+    }
+
+    void ZoomIn()
+    {
+        playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, zoomedFov, zoomSpeed * Time.deltaTime);
+    }
+
+    void ZoomOut()
+    {
+        playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, initialFov, zoomSpeed * Time.deltaTime);
     }
 
     void LateUpdate()
