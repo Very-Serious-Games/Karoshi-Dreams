@@ -9,13 +9,33 @@ public class MinigameController : MonoBehaviour
     public List<GameObject> cups;
 
     private float swappingSpeed; // Swapping speed of the cups
+    private bool isSwapping = false;
+
+    void Awake() {
+        // Get all the cups in the scene
+        AssignBallToCup();
+    }
+
+    private void AssignBallToCup()
+    {
+        // Generate a random index
+        int index = UnityEngine.Random.Range(0, cups.Count);
+
+        // Assign the ball to the selected cup
+        cups[index].tag = "CupWithBall";
+    }
 
     public void OnCupClicked(GameObject cup)
     {
-        Debug.Log("Cup clicked: " + cup.name);
 
-        // Start the ShuffleCups coroutine
-        StartCoroutine(ShuffleCups(10));
+        // If the player is already swapping cups, return
+        if (!isSwapping)
+        {
+            Debug.Log("Cup clicked: " + cup.name);
+            // Start the ShuffleCups coroutine
+            StartCoroutine(ShuffleCups(10));
+        }
+        
     }
 
     private IEnumerator ShuffleCups(int numberOfSwaps)
@@ -39,6 +59,8 @@ public class MinigameController : MonoBehaviour
 
     private IEnumerator SwapCups(GameObject cup1, GameObject cup2)
     {
+        isSwapping = true;
+
         Vector3 cup1TargetPosition = cup2.transform.position;
         Vector3 cup2TargetPosition = cup1.transform.position;
 
@@ -54,5 +76,7 @@ public class MinigameController : MonoBehaviour
 
             yield return null;
         }
+
+        isSwapping = false;
     }
 }

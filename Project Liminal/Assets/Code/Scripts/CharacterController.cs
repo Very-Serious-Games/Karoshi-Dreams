@@ -122,8 +122,7 @@ public class CharacterController : MonoBehaviour
 
                 if (hit.transform.gameObject.CompareTag("CupWithBall"))
                 {
-                    // If this cup is clicked, trigger the merge event
-                    minigameController.OnCupClicked(hit.transform.gameObject);
+                    Debug.Log("You found the ball!");
                 }
             }
         }
