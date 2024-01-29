@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class KeyboardKey : MonoBehaviour
@@ -7,7 +8,9 @@ public class KeyboardKey : MonoBehaviour
 
     [Header("Audio Settings")]
     public AudioController audioController;
-
+    public string typeString;
+    public GameObject textContainer;
+    private TextMeshProUGUI text;
     public bool isPressed = false;
     public float maxPressedDistance = 0.1f;
     public float lerpSpeed = 5f;
@@ -21,6 +24,7 @@ public class KeyboardKey : MonoBehaviour
         // Set the original position
         originalPosition = transform.position;
         targetPosition = new Vector3(transform.position.x, transform.position.y - maxPressedDistance, transform.position.z);
+        text = textContainer.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -37,6 +41,7 @@ public class KeyboardKey : MonoBehaviour
             {
                 // Come up and disable isPressed
                 isPressed = false;
+                text.text += typeString;
             }
         }
         else
