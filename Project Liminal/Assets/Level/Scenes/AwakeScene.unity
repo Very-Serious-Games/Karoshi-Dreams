@@ -6756,7 +6756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioController: {fileID: 265490961}
-  typeString: Working
+  typeString: 'Working '
   textContainer: {fileID: 2112320795}
   isPressed: 0
   maxPressedDistance: 0.05
@@ -8931,7 +8931,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 3
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
