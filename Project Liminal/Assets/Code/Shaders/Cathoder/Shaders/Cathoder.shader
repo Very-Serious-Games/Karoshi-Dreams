@@ -8,7 +8,7 @@
 
 		_RGBA("Color", Color) = (1, 1, 1, 1)
 
-		_Intensity("Intensity",	Range(0.1, 10)) = 2
+		_Intensity("Intensity",	Range(0.1, 30)) = 2
 
 		[Toggle]
 		_Binary("Binary Pixels",	Float) = 0
