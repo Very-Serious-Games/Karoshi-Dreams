@@ -21,13 +21,30 @@ public class TimeManager : MonoBehaviour
     {
         elapsedTime += Time.deltaTime;
 
-        if (elapsedTime > 10f)
+        switch (GlobalVariables.rounds)
         {
-            if(!isNightmare){
-                sceneSwitcher.SwitchScene("NightmareScene");
-                isNightmare = true;
-                GlobalVariables.rounds++;
-            }
+            case 0:
+                if (elapsedTime > 10f)
+                {
+                    if(!isNightmare){
+                        sceneSwitcher.SwitchScene("NightmareScene");
+                        isNightmare = true;
+                        GlobalVariables.rounds++;
+                    }   
+                }
+                break;
+            case 1:
+                if (elapsedTime > Random.Range(20f, 40f))
+                {
+                    if(!isNightmare){
+                        sceneSwitcher.SwitchScene("NightmareScene");
+                        isNightmare = true;
+                        GlobalVariables.rounds++;
+                    }
+                }
+                break;
+            case 2:
+                break;
         }
     }
 }
