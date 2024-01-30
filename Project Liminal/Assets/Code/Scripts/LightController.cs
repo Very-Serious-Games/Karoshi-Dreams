@@ -28,7 +28,7 @@ public class LightController : MonoBehaviour
 
     private IEnumerator TurnOnLight()
     {
-        float duration = Random.Range(0.1f, 0.5f);
+        float duration = Random.Range(0.1f, 0.2f);
         float elapsed = 0;
 
         while (elapsed < duration)
@@ -44,7 +44,7 @@ public class LightController : MonoBehaviour
 
     private IEnumerator TurnOffLight()
     {
-        float duration = Random.Range(0.1f, 0.5f);
+        float duration = Random.Range(0.1f, 0.2f);
         float elapsed = 0;
 
         while (elapsed < duration)

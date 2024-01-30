@@ -2409,7 +2409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c71c0c83239194396d8322b515db3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 0.005
+  threshold: 0.001
   flickerAmount: 0.3
 --- !u!1 &547341820
 GameObject:
