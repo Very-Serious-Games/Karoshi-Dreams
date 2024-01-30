@@ -27,12 +27,24 @@ public class PrinterController : MonoBehaviour
 
     public void Print()
     {
-        
         GameObject obj = Instantiate(paperPrefab, transform.position, transform.rotation);
-        /*
-        TextMeshProUGUI text = obj.folioText;
-        text.text = screenText.text;
-        screenText.text = "";
-        */
+        Transform textChild = obj.transform.Find("Text (TMP)");
+        if (textChild != null)
+        {
+            TextMeshPro text = textChild.GetComponent<TextMeshPro>();
+            if (text != null)
+            {
+                text.text = screenText.text;
+                screenText.text = "";
+            }
+            else
+            {
+                Debug.Log("No TextMeshPro component found in the 'Text (TMP)' child.");
+            }
+        }
+        else
+        {
+            Debug.Log("No child GameObject named 'Text (TMP)' found.");
+        }
     }
 }
