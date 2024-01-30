@@ -39,6 +39,10 @@ public class CharacterController : MonoBehaviour
 
     private GameObject tempCube;
 
+    private float elapsedTime = 0f;
+    private float speed = 0f;
+    private float acceleration = 0.1f;
+
     void Start()
     {
         // Lock cursor
@@ -134,6 +138,21 @@ public class CharacterController : MonoBehaviour
         {
             ZoomOut();
         }
+
+        if (GlobalVariables.rounds == 5)
+            {
+                elapsedTime += Time.deltaTime;
+                if (elapsedTime > 60f)
+                {
+                    speed += acceleration * Time.deltaTime;
+                    transform.Translate(Vector3.up * speed * Time.deltaTime);
+                    Debug.Log("moviendome hacia arriba jeje");
+                    if (elapsedTime > 20f)
+                    {
+                        Debug.Log("endgame");
+                    }
+                }
+            }
     }
 
     void ZoomIn()
