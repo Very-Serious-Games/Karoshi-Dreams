@@ -142,7 +142,7 @@ public class CharacterController : MonoBehaviour
         if (GlobalVariables.rounds == 5)
             {
                 elapsedTime += Time.deltaTime;
-                if (elapsedTime > 60f)
+                if (elapsedTime > 10f)
                 {
                     speed += acceleration * Time.deltaTime;
                     transform.Translate(Vector3.up * speed * Time.deltaTime);
