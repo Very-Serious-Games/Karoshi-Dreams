@@ -7,6 +7,10 @@ public class CharacterController : MonoBehaviour
     [Header("Camera Settings")]
     public Camera playerCamera;
 
+    public float zoomSpeed = 10f; // Adjust this value to change the speed of zooming
+    private float initialFov = 60f; // The initial field of view of the camera
+    public float zoomedFov = 30f; // The field of view of the camera when zoomed in
+
     [Header("Target Settings")]
     public GameObject target; // The target object to follow
 
@@ -25,6 +29,9 @@ public class CharacterController : MonoBehaviour
     [Header("Scene Settings")]
     public SceneSwitcher sceneSwitcher;
 
+    [Header("Minigame Settings")]
+    public MinigameController minigameController;
+
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
     private bool isLockedOnTarget = false; // Whether the camera is locked on the target
@@ -32,11 +39,18 @@ public class CharacterController : MonoBehaviour
 
     private GameObject tempCube;
 
+    private float elapsedTime = 0f;
+    private float speed = 0f;
+    private float acceleration = 0.1f;
+
     void Start()
     {
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        // Set initial field of view
+        initialFov = playerCamera.fieldOfView;
 
         // Set initial rotation to look to the front
         rotY = 0.0f;
@@ -96,13 +110,59 @@ public class CharacterController : MonoBehaviour
                         sceneSwitcher.SwitchScene("NightmareScene");
                     }
                 }
-                else if (hit.transform.gameObject.CompareTag("KeyboardKey"))
+                
+                
+                if (hit.transform.gameObject.CompareTag("KeyboardKey"))
                 {
                     audioController.PlayAudio("key"); // Play the key sound
                     hit.transform.gameObject.GetComponent<KeyboardKey>().isPressed = true;
                 }
+
+                if (hit.transform.gameObject.CompareTag("CupWithoutBall")) 
+                {
+                    // If this cup is clicked, trigger the merge event
+                    minigameController.OnCupClicked(hit.transform.gameObject);
+                }
+
+                if (hit.transform.gameObject.CompareTag("CupWithBall"))
+                {
+                    Debug.Log("You found the ball!");
+                }
             }
         }
+        else if(Input.GetMouseButton(1))
+        {
+            ZoomIn();
+        }
+        else
+        {
+            ZoomOut();
+        }
+
+        if (GlobalVariables.rounds == 5)
+            {
+                elapsedTime += Time.deltaTime;
+                if (elapsedTime > 10f)
+                {
+                    speed += acceleration * Time.deltaTime;
+                    transform.Translate(Vector3.up * speed * Time.deltaTime);
+                    Debug.Log("moviendome hacia arriba jeje");
+                    if (elapsedTime > 20f)
+                    {
+                        Debug.Log("endgame");
+                    }
+                }
+            }
+    }
+
+    void ZoomIn()
+    {
+        playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, zoomedFov, zoomSpeed * Time.deltaTime);
+    }
+
+    void ZoomOut()
+    {
+        playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, initialFov, zoomSpeed * Time.deltaTime);
     }
 
     void LateUpdate()

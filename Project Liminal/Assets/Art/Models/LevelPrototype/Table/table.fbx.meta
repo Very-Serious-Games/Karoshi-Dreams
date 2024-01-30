@@ -3,7 +3,22 @@ guid: bc358c65b0e0ba88bb682c7ba4c7fa18
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gomas
+    second: {fileID: 2100000, guid: 27e4c0a7ee8125725b7049e9f7dccc21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Patas
+    second: {fileID: 2100000, guid: f0a0762767558d4c798b932e810764fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: fd51923dcc1fe9affb57e0843d9fa38f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -48,7 +63,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

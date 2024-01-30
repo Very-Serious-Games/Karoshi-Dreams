@@ -62,4 +62,13 @@ public class AudioController : MonoBehaviour {
             audioSources[key].UnPause();
         }
     }
+
+    public void SetVolume(string key, float volume)
+    {
+        if (audioSources.ContainsKey(key))
+        {
+            audioSources[key].volume = volume;
+        }
+    }
+    
 }
