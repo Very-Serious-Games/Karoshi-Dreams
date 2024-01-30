@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
-    static public uint rounds = 5;
+    static public uint rounds = 0;
 }
