@@ -6,14 +6,50 @@ using UnityEngine;
 public class MinigameController : MonoBehaviour
 {
     [Header("Cup Settings")]
-    public List<GameObject> cups;
+    public GameObject cupPrefab; // The cup prefab
+    public int BaseNumberOfCups = 3; // The base number of cups
+    private List<GameObject> cups;
+
+    [Header("Table Settings")]
+    public GameObject table; // The table GameObject
+
+    [Header("Scene Settings")]
+    public SceneSwitcher sceneSwitcher;
 
     private float swappingSpeed; // Swapping speed of the cups
     private bool isSwapping = false;
 
     void Awake() {
+        // Initialize the cups list
+        cups = new List<GameObject>();
+
+        // Create the cups
+        CreateCups();
+
         // Get all the cups in the scene
         AssignBallToCup();
+    }
+
+    private void CreateCups()
+    {
+        // Calculate the total width of all cups and spaces
+        float totalWidth = (BaseNumberOfCups + GlobalVariables.rounds - 1) * 0.5f;
+
+        // Calculate the starting X position
+        float startX = table.transform.position.x - totalWidth / 2;
+
+        // Create a number of cups based on the current round number
+        for (int i = 0; i < BaseNumberOfCups + GlobalVariables.rounds; i++)
+        {
+            // Instantiate a new cup GameObject
+            GameObject cup = Instantiate(cupPrefab);
+
+            // Position the cup at a different X coordinate relative to the table's position
+            cup.transform.position = new Vector3(startX + i * 0.5f, cup.transform.position.y, table.transform.position.z);
+
+            // Add the cup to the cups list
+            cups.Add(cup);
+        }
     }
 
     private void AssignBallToCup()
@@ -32,8 +68,24 @@ public class MinigameController : MonoBehaviour
         if (!isSwapping)
         {
             Debug.Log("Cup clicked: " + cup.name);
+
             // Start the ShuffleCups coroutine
-            StartCoroutine(ShuffleCups(10));
+            StartCoroutine(ShuffleCups((int)(10 + GlobalVariables.rounds * 2)));
+        }
+        
+    }
+
+    public void OnCupClickedWithBall(GameObject cup)
+    {
+
+        // If the player is already swapping cups, return
+        if (!isSwapping)
+        {
+            Debug.Log("You found the ball!");
+            // Increment the number of rounds
+            GlobalVariables.rounds++;
+            Debug.Log("Rounds: " + GlobalVariables.rounds);
+            sceneSwitcher.SwitchScene("AwakeScene");
         }
         
     }
@@ -65,7 +117,7 @@ public class MinigameController : MonoBehaviour
         Vector3 cup2TargetPosition = cup1.transform.position;
 
         float time = 0;
-        swappingSpeed = UnityEngine.Random.Range(1, 5);
+        swappingSpeed = UnityEngine.Random.Range(1, 5) + GlobalVariables.rounds;
         while (time < 1)
         {
             time += Time.deltaTime * swappingSpeed;
