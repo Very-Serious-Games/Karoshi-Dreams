@@ -29,7 +29,6 @@ public class TimeManager : MonoBehaviour
                     if(!isNightmare){
                         sceneSwitcher.SwitchScene("NightmareScene");
                         isNightmare = true;
-                        GlobalVariables.rounds++;
                     }   
                 }
                 break;
@@ -39,7 +38,6 @@ public class TimeManager : MonoBehaviour
                     if(!isNightmare){
                         sceneSwitcher.SwitchScene("NightmareScene");
                         isNightmare = true;
-                        GlobalVariables.rounds++;
                     }
                 }
                 break;
