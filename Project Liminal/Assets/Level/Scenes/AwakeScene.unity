@@ -1012,6 +1012,7 @@ Transform:
   - {fileID: 1638925676}
   - {fileID: 1373221626}
   - {fileID: 1664089963}
+  - {fileID: 636054665}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &597154410
@@ -1069,7 +1070,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 447757005}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: eed251b74ec4d8b68bb5005f1131cb7c, type: 3}
       propertyPath: m_LocalScale.x
@@ -1085,15 +1086,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eed251b74ec4d8b68bb5005f1131cb7c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.06
+      value: -0.7090001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eed251b74ec4d8b68bb5005f1131cb7c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4486
+      value: 1.1013105
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eed251b74ec4d8b68bb5005f1131cb7c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.6764941
+      value: 0.66350603
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eed251b74ec4d8b68bb5005f1131cb7c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1140,6 +1141,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed251b74ec4d8b68bb5005f1131cb7c, type: 3}
+--- !u!4 &636054665 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eed251b74ec4d8b68bb5005f1131cb7c, type: 3}
+  m_PrefabInstance: {fileID: 636054664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &669236543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2933,12 +2939,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: -14.845528}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 1001598338}
-  m_maskType: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 1001598338}
+  m_maskType: 0
 --- !u!23 &1001598338
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6152,4 +6158,3 @@ SceneRoots:
   - {fileID: 1774423780}
   - {fileID: 1524857750}
   - {fileID: 1001598339}
-  - {fileID: 636054664}
