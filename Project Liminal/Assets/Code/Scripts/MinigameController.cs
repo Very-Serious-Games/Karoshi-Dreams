@@ -79,7 +79,7 @@ public class MinigameController : MonoBehaviour
         {
             Debug.Log("Cup clicked: " + cup.name);
             
-            StartCoroutine(showCupBall(cup));
+            StartCoroutine(showCupBall(cup, true));
         }
         
     }
