@@ -16,6 +16,9 @@ public class MinigameController : MonoBehaviour
     [Header("Scene Settings")]
     public SceneSwitcher sceneSwitcher;
 
+    [Header("Audio Settings")]
+    public AudioController audioController;
+
     private float swappingSpeed; // Swapping speed of the cups
     private bool isSwapping = false;
 
@@ -118,6 +121,9 @@ public class MinigameController : MonoBehaviour
 
         float time = 0;
         swappingSpeed = UnityEngine.Random.Range(1, 5) + GlobalVariables.rounds;
+
+        audioController.PlayAudio("shuffle_cups");
+
         while (time < 1)
         {
             time += Time.deltaTime * swappingSpeed;
