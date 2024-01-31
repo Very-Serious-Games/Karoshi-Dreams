@@ -38,11 +38,14 @@ public class LightController : MonoBehaviour
         float duration = Random.Range(0.1f, 0.2f);
         float elapsed = 0;
 
+        audioController.PlayAudio("flickering_lights");
+
         while (elapsed < duration)
         {
             float intensity = Mathf.Lerp(0, originalIntensity, elapsed / duration);
             lightComponent.intensity = intensity + Random.Range(-flickerAmount, flickerAmount);
             elapsed += Time.deltaTime;
+
             yield return null;
         }
 
