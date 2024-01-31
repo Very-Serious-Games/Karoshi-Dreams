@@ -126,8 +126,7 @@ public class MinigameController : MonoBehaviour
         Vector3 cup2TargetPosition = cup1.transform.position;
 
         float time = 0;
-        //swappingSpeed = UnityEngine.Random.Range(1, 5) + GlobalVariables.rounds;
-        swappingSpeed = 0.5f;
+        swappingSpeed = UnityEngine.Random.Range(0.5f, 1.0f) * (GlobalVariables.rounds / 2 + 1);
 
         audioController.PlayAudio("shuffle_cups");
 
@@ -145,26 +144,36 @@ public class MinigameController : MonoBehaviour
         isSwapping = false;
     }
 
-    private IEnumerator showCupBall(GameObject cup)
+    private IEnumerator showCupBall(GameObject cup, bool clicked = false)
     {
         isShowing = true;
         if(cup.tag == "CupWithBall")
         {
             cup.GetComponent<Animator>().Play("vasosup");
 
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
 
             cup.GetComponent<Animator>().Play("vasosdw");
-            OnCupClickedWithBall(cup);
+            if(clicked)OnCupClickedWithBall(cup);
         }
         else
         {
             cup.GetComponent<Animator>().Play("vasoupnn");
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             cup.GetComponent<Animator>().Play("vasosdw");
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
             // Start the ShuffleCups coroutine
+
+            foreach (GameObject cup1 in cups)
+            {
+                if (cup1.tag == "CupWithBall")
+                {
+                    yield return StartCoroutine(showCupBall(cup1, false));
+                    yield return new WaitForSeconds(1);
+                    break;
+                }
+            }
             StartCoroutine(ShuffleCups((int)(10 + GlobalVariables.rounds * 2)));
         }
         isShowing = false;
@@ -182,19 +191,19 @@ public class MinigameController : MonoBehaviour
             {
                 cup.GetComponent<Animator>().Play("vasosup");
 
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(1);
 
                 cup.GetComponent<Animator>().Play("vasosdw");
             }
             else
             {
                 cup.GetComponent<Animator>().Play("vasoupnn");
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(1);
                 cup.GetComponent<Animator>().Play("vasosdw");
             }
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.5f);
         }
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         isShowing = false;
         StartCoroutine(ShuffleCups((int)(10 + GlobalVariables.rounds * 2)));
     }
