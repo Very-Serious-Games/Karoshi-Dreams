@@ -112,4 +112,9 @@ public class SettingsController : MonoBehaviour
     {
         sensitivityText.text = sensitivity.ToString("0.0");
     }
+
+    public void PlayClickSound()
+    {
+        audioController.PlayAudio("ui_click");
+    }
 }
