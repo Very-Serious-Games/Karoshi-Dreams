@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TimeManager : MonoBehaviour
@@ -9,7 +10,6 @@ public class TimeManager : MonoBehaviour
     private float elapsedTime = 0f;
 
     bool isNightmare = false;
-
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class TimeManager : MonoBehaviour
         switch (GlobalVariables.rounds)
         {
             case 0:
-                if (elapsedTime > 100f)
+                if (elapsedTime > 10f)
                 {
                     if(!isNightmare){
                         sceneSwitcher.SwitchScene("NightmareScene");
