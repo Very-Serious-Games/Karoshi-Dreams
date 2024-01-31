@@ -63,7 +63,8 @@ public class TimeManager : MonoBehaviour
                 if (elapsedTime > Random.Range(20f, 40f))
                     {
                         if(!isNightmare){
-                            sceneSwitcher.SwitchScene("NightmareScene");
+                            sceneSwitcher.SwitchScene("AwakeScene");
+                            GlobalVariables.rounds++;
                             isNightmare = true;
                         }
                     }
