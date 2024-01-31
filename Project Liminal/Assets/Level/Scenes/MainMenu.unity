@@ -6080,6 +6080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanvasTransform: {fileID: 1110854717}
+  mouseCursor: {fileID: 0}
 --- !u!114 &1110854714
 MonoBehaviour:
   m_ObjectHideFlags: 0
