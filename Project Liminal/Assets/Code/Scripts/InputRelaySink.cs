@@ -12,6 +12,8 @@ public class InputRelaySink : MonoBehaviour
 
     List<GameObject> DragTargets = new List<GameObject>();
 
+    public GameObject mouseCursor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,9 @@ public class InputRelaySink : MonoBehaviour
         // construct our pointer event
         PointerEventData mouseEvent = new PointerEventData(EventSystem.current);
         mouseEvent.position = mousePosition;
+
+        mouseCursor.transform.localPosition = mouseEvent.position - new Vector2(256, 256);
+        Debug.Log(mouseEvent.position);
 
         // perform a raycast using the graphics raycaster
         List<RaycastResult> results = new List<RaycastResult>();
