@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -113,10 +113,10 @@ TextureImporter:
       name: demonspritesheet_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 3441
-        width: 692
-        height: 1040
+        x: 33
+        y: 6873
+        width: 697
+        height: 1051
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: demonspritesheet_1
       rect:
         serializedVersion: 2
-        x: 810
-        y: 3441
-        width: 693
-        height: 1040
+        x: 835
+        y: 6871
+        width: 696
+        height: 1053
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: demonspritesheet_2
       rect:
         serializedVersion: 2
-        x: 1612
-        y: 3441
-        width: 694
-        height: 1040
+        x: 1637
+        y: 6871
+        width: 696
+        height: 1053
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: demonspritesheet_3
       rect:
         serializedVersion: 2
-        x: 2419
-        y: 3438
-        width: 706
-        height: 1043
+        x: 2441
+        y: 6869
+        width: 693
+        height: 1055
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: demonspritesheet_4
       rect:
         serializedVersion: 2
-        x: 3220
-        y: 3438
-        width: 706
-        height: 1043
+        x: 3244
+        y: 6869
+        width: 691
+        height: 1055
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: demonspritesheet_5
       rect:
         serializedVersion: 2
-        x: 4022
-        y: 3438
-        width: 705
-        height: 1043
+        x: 4021
+        y: 6869
+        width: 689
+        height: 1046
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: demonspritesheet_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 2297
-        width: 692
-        height: 1040
+        x: 4819
+        y: 6871
+        width: 697
+        height: 1044
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: demonspritesheet_7
       rect:
         serializedVersion: 2
-        x: 810
-        y: 2297
+        x: 5624
+        y: 6869
         width: 693
-        height: 1040
+        height: 1046
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: demonspritesheet_8
       rect:
         serializedVersion: 2
-        x: 1612
-        y: 2297
+        x: 6434
+        y: 6869
         width: 693
-        height: 1040
+        height: 1051
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: demonspritesheet_9
       rect:
         serializedVersion: 2
-        x: 2419
-        y: 2294
-        width: 706
-        height: 1043
+        x: 7243
+        y: 6871
+        width: 697
+        height: 1049
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: demonspritesheet_10
       rect:
         serializedVersion: 2
-        x: 3216
-        y: 2297
-        width: 693
-        height: 1040
+        x: 8053
+        y: 6873
+        width: 698
+        height: 1051
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: demonspritesheet_11
       rect:
         serializedVersion: 2
-        x: 4022
-        y: 2294
-        width: 705
-        height: 1043
+        x: 33
+        y: 5728
+        width: 697
+        height: 1050
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: demonspritesheet_12
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1153
-        width: 692
-        height: 1040
+        x: 835
+        y: 5728
+        width: 696
+        height: 1050
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: demonspritesheet_13
       rect:
         serializedVersion: 2
-        x: 810
-        y: 1153
-        width: 693
-        height: 1040
+        x: 1637
+        y: 5728
+        width: 696
+        height: 1050
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: demonspritesheet_14
       rect:
         serializedVersion: 2
-        x: 1612
-        y: 1153
-        width: 694
-        height: 1040
+        x: 2441
+        y: 5723
+        width: 693
+        height: 1059
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: demonspritesheet_15
       rect:
         serializedVersion: 2
-        x: 2415
-        y: 1153
-        width: 692
-        height: 1040
+        x: 3238
+        y: 5723
+        width: 693
+        height: 1055
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: demonspritesheet_16
       rect:
         serializedVersion: 2
-        x: 3216
-        y: 1153
-        width: 693
-        height: 1040
+        x: 4026
+        y: 5723
+        width: 689
+        height: 1051
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: demonspritesheet_17
       rect:
         serializedVersion: 2
-        x: 4022
-        y: 1150
-        width: 705
-        height: 1043
+        x: 4823
+        y: 5728
+        width: 697
+        height: 1044
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: demonspritesheet_18
       rect:
         serializedVersion: 2
-        x: 9
-        y: 9
-        width: 692
-        height: 1040
+        x: 5621
+        y: 5728
+        width: 696
+        height: 1041
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: demonspritesheet_19
       rect:
         serializedVersion: 2
-        x: 810
-        y: 9
-        width: 693
-        height: 1040
+        x: 6423
+        y: 5728
+        width: 695
+        height: 1041
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: demonspritesheet_20
       rect:
         serializedVersion: 2
-        x: 1612
-        y: 9
-        width: 694
-        height: 1040
+        x: 7235
+        y: 5728
+        width: 697
+        height: 1046
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +554,10 @@ TextureImporter:
       name: demonspritesheet_21
       rect:
         serializedVersion: 2
-        x: 2415
-        y: 9
-        width: 692
-        height: 1040
+        x: 8053
+        y: 5728
+        width: 698
+        height: 1050
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +575,10 @@ TextureImporter:
       name: demonspritesheet_22
       rect:
         serializedVersion: 2
-        x: 3216
-        y: 9
-        width: 693
-        height: 1040
+        x: 29
+        y: 4581
+        width: 692
+        height: 1051
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: demonspritesheet_23
       rect:
         serializedVersion: 2
-        x: 4018
-        y: 9
+        x: 817
+        y: 4581
         width: 693
-        height: 1040
+        height: 1047
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,6 +609,1014 @@ TextureImporter:
       bones: []
       spriteID: d64eef5e0a4d7284f830c768007b65c0
       internalID: 487641554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 4581
+        width: 692
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea905b8d4d70f9cd88a8bbff31a261c
+      internalID: 577114173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 4581
+        width: 691
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f549aeecad28ab4808ea87ab92b87ce6
+      internalID: 1861042648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 4583
+        width: 696
+        height: 1053
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2a514f8c249e4abb0fe9bd266b2598
+      internalID: 1221797631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 4039
+        y: 4581
+        width: 692
+        height: 1051
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8361800d3f1f91e33a7cc22126281de0
+      internalID: 191825150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 4819
+        y: 4583
+        width: 697
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ce8fe93100f9f6c91c8fb135298b99
+      internalID: -1612321118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 5620
+        y: 4583
+        width: 697
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e674b70cae8537759b5885a8be4bf27d
+      internalID: -122637542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 6434
+        y: 4583
+        width: 697
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759d57dcb1c7c000ea6453e4f6b2714e
+      internalID: 1181151593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 7240
+        y: 4583
+        width: 697
+        height: 1049
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9ebc78d91b444ed8b90a005a481bd5
+      internalID: -1771756146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3440
+        width: 696
+        height: 1051
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb3ce5808ab5e442ad3d90487d08d19
+      internalID: 379437983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 3436
+        width: 692
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fdf0572da575c17920885b31a6a64e
+      internalID: 318589615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 3436
+        width: 692
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044149feaa243b941b96edcbb46b35b0
+      internalID: 1357647100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 3436
+        width: 692
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5759a2448492f5793bd4788d6c950fe4
+      internalID: 972476440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 3440
+        width: 697
+        height: 1051
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ce16e5dbb9a103894a412d5f9e6ee1
+      internalID: 1114236648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 4040
+        y: 3440
+        width: 696
+        height: 1051
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51584bf4d28379ba3ad74dcdd0e8455f
+      internalID: -95905810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 4819
+        y: 3440
+        width: 697
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91232e1624276c0cad75237361b0522
+      internalID: -363408486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 5642
+        y: 3440
+        width: 697
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63487522f51b001280c9984bdbb5efe
+      internalID: 160308040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 6425
+        y: 3440
+        width: 697
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ef168080edd804b8f9296c1afdb640
+      internalID: -683988135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 7244
+        y: 3440
+        width: 697
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b2ef300d8cdad29a6639f7de82f552
+      internalID: 238933717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2295
+        width: 696
+        height: 1049
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c986a07d5e1d2a496bd46e0778b122ca
+      internalID: -805239712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 2295
+        width: 695
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718c8e82619174aa59e7a88e02eb8c45
+      internalID: -1557698500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 2295
+        width: 697
+        height: 1048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc6e0a302d4318a1a0f6d315857ef20
+      internalID: 1465917766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 2295
+        width: 698
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8918fdb4e8fb79975ad166dd15905cc2
+      internalID: 585861518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 2295
+        width: 695
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e91ab95292e0f54989c62b94087e6b
+      internalID: -2078285080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 4026
+        y: 2292
+        width: 692
+        height: 1049
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99d1212b9b984f0e980439d93e3b535
+      internalID: -1007209637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 4836
+        y: 2295
+        width: 697
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8d99c738006473d8e8f4e4b0bdf64c
+      internalID: -1243954383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 2292
+        width: 689
+        height: 1049
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d402867d9057c17e878ac34fbbb7c9f
+      internalID: 1083191402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 6447
+        y: 2295
+        width: 697
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4b50f902c5d04d8914ae3c99004370
+      internalID: 948047112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 7227
+        y: 2295
+        width: 697
+        height: 1045
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e3425bed8967b09aaf50a9831129d3
+      internalID: 1279689501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1153
+        width: 695
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cc2d9ae010dd61e856cb3a0dbba0e0
+      internalID: -939949998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 1153
+        width: 697
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40d381300278afcea8ee7f8aa611f4d
+      internalID: 436401631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1153
+        width: 696
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5afdbfad0fb67718d582f080e50335
+      internalID: 716742752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 1153
+        width: 697
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08897c552cf520d76b5cf80313d1e91e
+      internalID: 2136725197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 1153
+        width: 697
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a94f889883767e6a7ff89a3b009e8b
+      internalID: -1593087274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 4019
+        y: 1153
+        width: 696
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef971e49b98bc9a49a04c7c9d87206c6
+      internalID: 179300157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 4823
+        y: 1153
+        width: 697
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d81d3f7fba62c5295d52224d2c41f4
+      internalID: -1928646289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 5625
+        y: 1153
+        width: 696
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c41d0338021c95ca1e24552bb89acb
+      internalID: 2084432532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 6436
+        y: 1153
+        width: 695
+        height: 1046
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa81a6019774365ab3b934145e5d34e
+      internalID: 1903610025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 7246
+        y: 1153
+        width: 695
+        height: 1049
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ec1cee1e4acbb1f8667c2cd7f460cc
+      internalID: -1072279980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 3
+        width: 693
+        height: 1057
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3955c2b11a032dc865a3b217989b5d
+      internalID: -1911122454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 3
+        width: 691
+        height: 1058
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b22f555b06d920c9ad8ebf1163302e
+      internalID: -119916195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3
+        width: 692
+        height: 1054
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50ee662be4bf1fceafaa9272dca2d98
+      internalID: -66034288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 2437
+        y: 7
+        width: 697
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89efe8d196a56aeca7812d466609815
+      internalID: -1438250428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 7
+        width: 695
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e1d86f30f7b113ba6824073b401e96
+      internalID: 947617830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 4043
+        y: 7
+        width: 697
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4910107f01b980d1483391978846cb81
+      internalID: -1417309816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 4845
+        y: 7
+        width: 697
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabce47e84c17ceb78d92fe05702195f
+      internalID: 1872738772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 3
+        width: 693
+        height: 1059
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6b3146063c0b2e49060387f657ed40
+      internalID: -2039382907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 6453
+        y: 3
+        width: 691
+        height: 1059
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407d38df710ac499aa74382685331059
+      internalID: 1370636497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demonspritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 7254
+        y: 3
+        width: 691
+        height: 1059
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0de9d67fd7b96a8fa909a2f11f7eae6
+      internalID: 511050914
       vertices: []
       indices: 
       edges: []
@@ -641,11 +1649,59 @@ TextureImporter:
       demonspritesheet_21: -331967090
       demonspritesheet_22: 1791928079
       demonspritesheet_23: 487641554
+      demonspritesheet_24: 577114173
+      demonspritesheet_25: 1861042648
+      demonspritesheet_26: 1221797631
+      demonspritesheet_27: 191825150
+      demonspritesheet_28: -1612321118
+      demonspritesheet_29: -122637542
       demonspritesheet_3: 1956873851
+      demonspritesheet_30: 1181151593
+      demonspritesheet_31: -1771756146
+      demonspritesheet_32: 379437983
+      demonspritesheet_33: 318589615
+      demonspritesheet_34: 1357647100
+      demonspritesheet_35: 972476440
+      demonspritesheet_36: 1114236648
+      demonspritesheet_37: -95905810
+      demonspritesheet_38: -363408486
+      demonspritesheet_39: 160308040
       demonspritesheet_4: -748834111
+      demonspritesheet_40: -683988135
+      demonspritesheet_41: 238933717
+      demonspritesheet_42: -805239712
+      demonspritesheet_43: -1557698500
+      demonspritesheet_44: 1465917766
+      demonspritesheet_45: 585861518
+      demonspritesheet_46: -2078285080
+      demonspritesheet_47: -1007209637
+      demonspritesheet_48: -1243954383
+      demonspritesheet_49: 1083191402
       demonspritesheet_5: -1779531665
+      demonspritesheet_50: 948047112
+      demonspritesheet_51: 1279689501
+      demonspritesheet_52: -939949998
+      demonspritesheet_53: 436401631
+      demonspritesheet_54: 716742752
+      demonspritesheet_55: 2136725197
+      demonspritesheet_56: -1593087274
+      demonspritesheet_57: 179300157
+      demonspritesheet_58: -1928646289
+      demonspritesheet_59: 2084432532
       demonspritesheet_6: 1482322804
+      demonspritesheet_60: 1903610025
+      demonspritesheet_61: -1072279980
+      demonspritesheet_62: -1911122454
+      demonspritesheet_63: -119916195
+      demonspritesheet_64: -66034288
+      demonspritesheet_65: -1438250428
+      demonspritesheet_66: 947617830
+      demonspritesheet_67: -1417309816
+      demonspritesheet_68: 1872738772
+      demonspritesheet_69: -2039382907
       demonspritesheet_7: 1538186531
+      demonspritesheet_70: 1370636497
+      demonspritesheet_71: 511050914
       demonspritesheet_8: 1144850540
       demonspritesheet_9: 598300052
   mipmapLimitGroupName: 
