@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
     public GameObject target; // The target object to follow
 
     [Header("Mouse Settings")]
-    public float mouseSensitivity = 600.0f;
+    public static float mouseSensitivity = 600.0f;
     public float clampAngleX = 80.0f;
     public float clampAngleY = 90.0f;
 
