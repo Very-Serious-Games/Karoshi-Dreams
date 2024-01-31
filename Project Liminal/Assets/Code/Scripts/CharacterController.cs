@@ -126,7 +126,7 @@ public class CharacterController : MonoBehaviour
 
                 if (hit.transform.gameObject.CompareTag("CupWithBall"))
                 {
-                    minigameController.OnCupClickedWithBall(hit.transform.gameObject);
+                    minigameController.OnCupClicked(hit.transform.gameObject);
                 }
             }
         }
