@@ -35,7 +35,11 @@ public class SettingsController : MonoBehaviour
             SetAllAudioVolumes(value);
         });
 
-        sensitivitySlider.onValueChanged.AddListener(UpdateSensitivityText);
+        sensitivitySlider.onValueChanged.AddListener(value =>
+        {
+            UpdateSensitivityText(value);
+            CharacterController.mouseSensitivity = value;
+        });
     }
 
     private void SetAllAudioVolumes(float volume)
