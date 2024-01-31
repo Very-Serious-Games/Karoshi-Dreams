@@ -38,7 +38,13 @@ public class LightController : MonoBehaviour
         float duration = Random.Range(0.1f, 0.2f);
         float elapsed = 0;
 
-        audioController.PlayAudio("flickering_lights");
+        int randomAudio = Random.Range(1, 2);
+
+        if (randomAudio == 1) {
+            audioController.PlayAudio("flickering_lights");
+        } else if (randomAudio == 2) {
+            audioController.PlayAudio("flickering_lights_2");
+        }
 
         while (elapsed < duration)
         {
