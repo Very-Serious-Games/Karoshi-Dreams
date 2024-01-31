@@ -3,8 +3,12 @@ using System.Collections;
 
 public class LightController : MonoBehaviour
 {
+    [Header("Light Settings")]
     public float threshold = 0.01f;
     public float flickerAmount = 0.2f;
+
+    [Header("Audio Settings")]
+    public AudioController audioController;
 
     private Light lightComponent;
     private float originalIntensity;
@@ -14,11 +18,14 @@ public class LightController : MonoBehaviour
     {
         lightComponent = GetComponent<Light>();
         originalIntensity = 35;
+        
+        audioController.PlayAudio("fluorescent");
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (Random.value < threshold)
         {
             StartCoroutine(TurnOnLight());
@@ -31,11 +38,14 @@ public class LightController : MonoBehaviour
         float duration = Random.Range(0.1f, 0.2f);
         float elapsed = 0;
 
+        audioController.PlayAudio("flickering_lights");
+
         while (elapsed < duration)
         {
             float intensity = Mathf.Lerp(0, originalIntensity, elapsed / duration);
             lightComponent.intensity = intensity + Random.Range(-flickerAmount, flickerAmount);
             elapsed += Time.deltaTime;
+
             yield return null;
         }
 
