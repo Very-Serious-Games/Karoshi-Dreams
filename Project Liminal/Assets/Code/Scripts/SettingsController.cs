@@ -14,7 +14,6 @@ public class SettingsController : MonoBehaviour
 
     [Header("Audio Settings")]
     public AudioController audioController; // Reference to the AudioController
-    public string audioKey; // Key of the audio source to control
 
     private float initialVolume;
     private float initialSensitivity;
@@ -33,9 +32,19 @@ public class SettingsController : MonoBehaviour
         volumeSlider.onValueChanged.AddListener(value =>
         {
             UpdateVolumeText(value);
-            audioController.SetVolume(audioKey, value);
+            SetAllAudioVolumes(value);
         });
+
         sensitivitySlider.onValueChanged.AddListener(UpdateSensitivityText);
+    }
+
+    private void SetAllAudioVolumes(float volume)
+    {
+        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource audioSource in allAudioSources)
+        {
+            audioSource.volume = volume;
+        }
     }
 
     public void ShowSettingsMenu()
@@ -87,7 +96,7 @@ public class SettingsController : MonoBehaviour
         sensitivitySlider.value = initialSensitivity;
         UpdateVolumeText(initialVolume);
         UpdateSensitivityText(initialSensitivity);
-        audioController.SetVolume(audioKey, initialVolume);
+        SetAllAudioVolumes(initialVolume);
     }
 
     private void UpdateVolumeText(float volume)
