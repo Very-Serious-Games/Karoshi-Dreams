@@ -24,7 +24,7 @@ public class TimeManager : MonoBehaviour
         switch (GlobalVariables.rounds)
         {
             case 0:
-                if (elapsedTime > 10f)
+                if (elapsedTime > 100f)
                 {
                     if(!isNightmare){
                         sceneSwitcher.SwitchScene("NightmareScene");
