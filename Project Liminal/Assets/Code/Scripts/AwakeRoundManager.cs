@@ -25,7 +25,8 @@ public class AwakeRoundManager : MonoBehaviour
                 objetosVariables.RandomScale();
                 break;
             case 4:
-                
+                objetosVariables.RandomRotation();
+                objetosVariables.RandomScale();
                 break;
             case 5:
                 for (int i = 0; i < SceneObjects.transform.childCount; i++)

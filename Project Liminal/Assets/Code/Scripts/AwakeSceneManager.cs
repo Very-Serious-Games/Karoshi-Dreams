@@ -10,7 +10,14 @@ public class AwakeSceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rendererData.rendererFeatures[2].SetActive(false);
+        if(GlobalVariables.rounds == 4)
+        {
+            rendererData.rendererFeatures[2].SetActive(true);
+        }
+        else
+        {
+            rendererData.rendererFeatures[2].SetActive(false);
+        }
     }
 
     // Update is called once per frame

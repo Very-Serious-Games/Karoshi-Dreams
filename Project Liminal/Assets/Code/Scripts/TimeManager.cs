@@ -42,7 +42,32 @@ public class TimeManager : MonoBehaviour
                 }
                 break;
             case 2:
+                if (elapsedTime > Random.Range(20f, 40f))
+                {
+                    if(!isNightmare){
+                        sceneSwitcher.SwitchScene("NightmareScene");
+                        isNightmare = true;
+                    }
+                }
                 break;
+            case 3:
+             if (elapsedTime > Random.Range(20f, 40f))
+                {
+                    if(!isNightmare){
+                        sceneSwitcher.SwitchScene("NightmareScene");
+                        isNightmare = true;
+                    }
+                }
+                break;
+            case 4:
+                if (elapsedTime > Random.Range(20f, 40f))
+                    {
+                        if(!isNightmare){
+                            sceneSwitcher.SwitchScene("NightmareScene");
+                            isNightmare = true;
+                        }
+                    }
+                    break;
         }
     }
 }
