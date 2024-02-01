@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -24,7 +23,6 @@ public class MinigameController : MonoBehaviour
     private float swappingSpeed; // Swapping speed of the cups
     private bool isSwapping = false;
     private bool isShowing = false;
-    public AnimatorController animatorController;
 
     private bool firstSwap = true;
 

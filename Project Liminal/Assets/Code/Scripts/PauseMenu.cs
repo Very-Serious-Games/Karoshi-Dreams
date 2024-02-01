@@ -35,6 +35,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked; // Lock the cursor
         Time.timeScale = 1f;
         isPaused = false;
+        Cursor.visible = false;
     }
 
     public void Pause()
@@ -44,6 +45,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None; // Unlock the cursor
         Time.timeScale = 0f;
         isPaused = true;
+        Cursor.visible = true;
     }
 
     public void MainMenu()
