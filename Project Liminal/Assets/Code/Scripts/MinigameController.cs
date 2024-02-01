@@ -154,8 +154,10 @@ public class MinigameController : MonoBehaviour
         isShowing = true;
         if(cup.tag == "CupWithBall")
         {
+
             cup.GetComponent<Animator>().Play("vasosup");
 
+            audioController.PlayAudio("win-minigame");
             yield return new WaitForSeconds(1);
 
             cup.GetComponent<Animator>().Play("vasosdw");
@@ -164,6 +166,7 @@ public class MinigameController : MonoBehaviour
         else
         {
             cup.GetComponent<Animator>().Play("vasoupnn");
+            audioController.PlayAudio("lose-minigame");
             yield return new WaitForSeconds(1);
             cup.GetComponent<Animator>().Play("vasosdw");
 
