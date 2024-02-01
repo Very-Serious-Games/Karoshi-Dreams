@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MinigameController : MonoBehaviour
 {
@@ -29,18 +30,19 @@ public class MinigameController : MonoBehaviour
 
     void Awake() {
         
-        if(GlobalVariables.rounds == 4){
+        if (GlobalVariables.rounds == 4 || SceneManager.GetActiveScene().name == "NightmareScene") {
             // Initialize the cups list
-        cups = new List<GameObject>();
+            cups = new List<GameObject>();
 
-        // Create the cups
-        CreateCups();
+            // Create the cups
+            CreateCups();
 
-        // Get all the cups in the scene
-        AssignBallToCup();
+            // Get all the cups in the scene
+            AssignBallToCup();
 
-        StartCoroutine(showAllCups());
+            StartCoroutine(showAllCups());
         }
+
     }
 
     private void CreateCups()
