@@ -158,9 +158,9 @@ public class CharacterController : MonoBehaviour
                     textObject.transform.position = textPosition;
 
                     Debug.Log("moviendome hacia arriba jeje");
-                    if (elapsedTime > 20f)
+                    if (elapsedTime > 90f)
                     {
-                        Debug.Log("endgame");
+                        sceneSwitcher.SwitchScene("MainMenu");
                     }
                 }
             }
