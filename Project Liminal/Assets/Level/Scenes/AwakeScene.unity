@@ -5894,16 +5894,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 848046420}
-        m_TargetAssemblyTypeName: PrinterController, Assembly-CSharp
-        m_MethodName: Print
+      - m_Target: {fileID: 1470790657}
+        m_TargetAssemblyTypeName: PlayAudioButton, Assembly-CSharp
+        m_MethodName: PlayAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: printer
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &974069875
@@ -8071,6 +8071,52 @@ MonoBehaviour:
   image: {fileID: 1738609329}
   canvas: {fileID: 1388099353}
   playerCamera: {fileID: 963194227}
+--- !u!1 &1470790656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470790658}
+  - component: {fileID: 1470790657}
+  m_Layer: 0
+  m_Name: audioprinter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1470790657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470790656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fc98af54120d94fbdd940160309dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioController: {fileID: 872614293}
+  audioKey: printer
+--- !u!4 &1470790658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470790656}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.05664, y: -14.264957, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1487874071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11943,3 +11989,4 @@ SceneRoots:
   - {fileID: 625356480}
   - {fileID: 530211377}
   - {fileID: 2051987552}
+  - {fileID: 1470790658}
