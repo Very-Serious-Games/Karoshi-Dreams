@@ -36,6 +36,7 @@ public class AwakeRoundManager : MonoBehaviour
                 audioController.PlayAudio("fluorescent");
                 break;
             case 5:
+                audioController.PlayAudio("creditos");
                 for (int i = 0; i < SceneObjects.transform.childCount; i++)
                 {
                     Transform child = SceneObjects.transform.GetChild(i);
