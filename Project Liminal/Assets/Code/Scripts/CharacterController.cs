@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CharacterController : MonoBehaviour
 {
@@ -31,6 +32,10 @@ public class CharacterController : MonoBehaviour
 
     [Header("Minigame Settings")]
     public MinigameController minigameController;
+
+    [Header("Credits Settings")]
+    public TextMeshPro textObject;
+    public float additionalSpeed;
 
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
@@ -146,6 +151,12 @@ public class CharacterController : MonoBehaviour
                 {
                     speed += acceleration * Time.deltaTime;
                     transform.Translate(Vector3.up * speed * Time.deltaTime);
+
+                    // Move the TextMeshPro object up a little faster than the player
+                    Vector3 textPosition = textObject.transform.position;
+                    textPosition.y += (speed + additionalSpeed) * Time.deltaTime;
+                    textObject.transform.position = textPosition;
+
                     Debug.Log("moviendome hacia arriba jeje");
                     if (elapsedTime > 20f)
                     {
