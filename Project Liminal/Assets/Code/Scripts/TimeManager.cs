@@ -24,7 +24,7 @@ public class TimeManager : MonoBehaviour
         switch (GlobalVariables.rounds)
         {
             case 0:
-                if (elapsedTime > 60f)
+                if (elapsedTime > 100f)
                 {
                     if(!isNightmare){
                         sceneSwitcher.SwitchScene("NightmareScene");
@@ -33,7 +33,7 @@ public class TimeManager : MonoBehaviour
                 }
                 break;
             case 1:
-                if (elapsedTime > Random.Range(20f, 40f))
+                if (elapsedTime > Random.Range(40f, 60f))
                 {
                     if(!isNightmare){
                         sceneSwitcher.SwitchScene("NightmareScene");
@@ -42,7 +42,7 @@ public class TimeManager : MonoBehaviour
                 }
                 break;
             case 2:
-                if (elapsedTime > Random.Range(20f, 40f))
+                if (elapsedTime > Random.Range(40f, 60f))
                 {
                     if(!isNightmare){
                         sceneSwitcher.SwitchScene("NightmareScene");
@@ -51,7 +51,7 @@ public class TimeManager : MonoBehaviour
                 }
                 break;
             case 3:
-             if (elapsedTime > Random.Range(20f, 40f))
+             if (elapsedTime > Random.Range(30f, 50f))
                 {
                     if(!isNightmare){
                         sceneSwitcher.SwitchScene("NightmareScene");
