@@ -1011,7 +1011,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 24c4dd447a7e78d45b2cf49eccdba43a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 558b5fea9a7e7a14c9f0bdd85062bd88, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1923,6 +1923,8 @@ MonoBehaviour:
   audioController: {fileID: 0}
   sceneSwitcher: {fileID: 289123229}
   minigameController: {fileID: 2041988797}
+  textObject: {fileID: 0}
+  additionalSpeed: 0
 --- !u!4 &1429034129
 Transform:
   m_ObjectHideFlags: 0
