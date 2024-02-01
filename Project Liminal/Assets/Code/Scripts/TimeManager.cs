@@ -60,14 +60,14 @@ public class TimeManager : MonoBehaviour
                 }
                 break;
             case 4:
-                if (elapsedTime > Random.Range(20f, 40f))
+                /*if (elapsedTime > Random.Range(20f, 40f))
                     {
                         if(!isNightmare){
                             sceneSwitcher.SwitchScene("AwakeScene");
                             GlobalVariables.rounds++;
                             isNightmare = true;
                         }
-                    }
+                    }*/
                     break;
         }
     }
