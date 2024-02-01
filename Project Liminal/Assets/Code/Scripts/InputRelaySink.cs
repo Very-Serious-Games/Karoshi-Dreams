@@ -33,6 +33,8 @@ public class InputRelaySink : MonoBehaviour
                                             CanvasTransform.sizeDelta.y * normalisedPosition.y,
                                             0f);
 
+        Debug.Log(mousePosition);
+
         // construct our pointer event
         PointerEventData mouseEvent = new PointerEventData(EventSystem.current);
         mouseEvent.position = mousePosition;
