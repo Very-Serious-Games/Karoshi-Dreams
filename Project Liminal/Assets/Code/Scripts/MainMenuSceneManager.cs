@@ -11,6 +11,8 @@ public class MainMenuSceneManager : MonoBehaviour
     void Start()
     {
         rendererData.rendererFeatures[2].SetActive(false);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
