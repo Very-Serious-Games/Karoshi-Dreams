@@ -28,7 +28,9 @@ public class MinigameController : MonoBehaviour
     private bool firstSwap = true;
 
     void Awake() {
-        // Initialize the cups list
+        
+        if(GlobalVariables.rounds == 4){
+            // Initialize the cups list
         cups = new List<GameObject>();
 
         // Create the cups
@@ -38,6 +40,7 @@ public class MinigameController : MonoBehaviour
         AssignBallToCup();
 
         StartCoroutine(showAllCups());
+        }
     }
 
     private void CreateCups()
