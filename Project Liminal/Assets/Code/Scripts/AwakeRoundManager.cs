@@ -6,6 +6,8 @@ public class AwakeRoundManager : MonoBehaviour
 {
     public ObjetosVariables objetosVariables;
 
+    public AudioController audioController;
+
     public GameObject SceneObjects;
 
     // Start is called before the first frame update
@@ -14,19 +16,24 @@ public class AwakeRoundManager : MonoBehaviour
         switch (GlobalVariables.rounds)
         {
             case 0:
+                audioController.PlayAudio("fluorescent");
                 break;
             case 1:
                 objetosVariables.randomDeactivation();
+                audioController.PlayAudio("fluorescent");
                 break;
             case 2:
                 objetosVariables.RandomRotation();
+                audioController.PlayAudio("fluorescent");
                 break;
             case 3:
                 objetosVariables.RandomScale();
+                audioController.PlayAudio("fluorescent");
                 break;
             case 4:
                 objetosVariables.RandomRotation();
                 objetosVariables.RandomScale();
+                audioController.PlayAudio("fluorescent");
                 break;
             case 5:
                 for (int i = 0; i < SceneObjects.transform.childCount; i++)
